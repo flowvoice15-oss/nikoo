@@ -1,0 +1,1111 @@
+{
+  "users": [
+    {
+      "id": "usr_super_admin",
+      "name": "مدیر کل نیکو کافه",
+      "email": "flowvoice15@gmail.com",
+      "passwordHash": "ee0fb7e3ced696ef2610996f3413d9d77b071dab0cc5bff3905c70e33103b131dbad4e136ad0f7d41915f49642ee7c35b509befd77856689406f5c93cfaba73b",
+      "salt": "c3e4cf4e86a694750e351569cd8bf573",
+      "role": "super_admin",
+      "roleTitle": "مدیر ارشد و مالک سیستم",
+      "phone": "09120000001",
+      "mustChangePassword": false,
+      "status": "active",
+      "createdAt": "2026-11-08T07:56:45.467Z",
+      "username": "admin"
+    },
+    {
+      "id": "usr_manager",
+      "name": "سهراب مرادی",
+      "email": "manager@nikocafe.com",
+      "passwordHash": "8f1a25ed63c6c9407ea8e71dc68cc48f50b111835a371e36408d687f0ef6a8f501b37a57e2cc953720cd7771df843cf15ccf4d3d8411b450ee23c08c72269bc7",
+      "salt": "1e88e8e0e1714aaa634d351706cf534f",
+      "role": "manager",
+      "roleTitle": "مدیر شیفت و داخلی",
+      "phone": "09121112233",
+      "mustChangePassword": false,
+      "status": "active",
+      "createdAt": "2026-11-08T07:56:45.467Z",
+      "username": "manager"
+    },
+    {
+      "id": "usr_barista_1",
+      "name": "آرشام کیانی",
+      "email": "barista@nikocafe.com",
+      "passwordHash": "9f6f9137b44a0836d76e6141b99c18e8b52698ea21b17dcf88f0de2bccbea98ffbd561aaa81d17eb920f4de11f0a1bb018bb4aa0f50307e7ac073c95f2c5dffa",
+      "salt": "f18e35537390040c7ac3965613920dcb",
+      "role": "barista",
+      "roleTitle": "سرباریستا و متخصص قهوه",
+      "phone": "09123334455",
+      "mustChangePassword": false,
+      "status": "active",
+      "createdAt": "2026-11-08T07:56:45.467Z",
+      "username": "barista"
+    },
+    {
+      "id": "usr_waiter_1",
+      "name": "نیما فراهانی",
+      "email": "waiter@nikocafe.com",
+      "passwordHash": "613fb24a8362fc091b5fe56272d755ce3e56bf103ed44c4b18da351a3c88f518f0e0233ff73fa121d202df3a64fda8100a9a1fb74cb8cc9ddd9b8aa37e4ced40",
+      "salt": "dfa6d840d29b544c05b64feeb033e79c",
+      "role": "waiter",
+      "roleTitle": "میزبان و گارسون ارشد",
+      "phone": "09125556677",
+      "mustChangePassword": false,
+      "status": "active",
+      "createdAt": "2026-11-08T07:56:45.467Z",
+      "username": "waiter"
+    },
+    {
+      "id": "usr_cashier_1",
+      "name": "مهسا صادقی",
+      "email": "cashier@nikocafe.com",
+      "passwordHash": "a5f7f814928cc06faf3e74021e08a8ec4f11b9cecbe43b9b9a59cca3eb81c3b2a09af14aaf97f585accc28fbf01acc4b6348220638c52df76276010d7e6c5199",
+      "salt": "c99d4fbc1b35d9a9310abb6cddfa820d",
+      "role": "cashier",
+      "roleTitle": "صندوقدار و مسئول پذیرش",
+      "phone": "09127778899",
+      "mustChangePassword": false,
+      "status": "active",
+      "createdAt": "2026-11-08T07:56:45.467Z",
+      "username": "cashier"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec_main",
+      "name": "سالن اصلی (کافه)",
+      "description": "فضای دلنشین مرکزی کافه با بار اختصاصی"
+    },
+    {
+      "id": "sec_terrace",
+      "name": "تراس و فضای باز",
+      "description": "هوای آزاد و گلدان‌های زیتون با نور طبیعی"
+    },
+    {
+      "id": "sec_vip",
+      "name": "سالن VIP و جلسات",
+      "description": "میزهای بزرگ کنفرانس و دیدارهای کاری"
+    }
+  ],
+  "tables": [
+    {
+      "id": "tbl_1",
+      "number": 1,
+      "label": "میز ۱ (کنار پنجره)",
+      "sectionId": "sec_main",
+      "seats": 2,
+      "shape": "square",
+      "posX": 14,
+      "posY": 26,
+      "width": 80,
+      "height": 80,
+      "status": "occupied",
+      "activeOrderId": "ord_101",
+      "currentWaiter": "نیما فراهانی",
+      "customerCount": 2,
+      "occupiedSince": "2026-11-08T07:14:45.468Z"
+    },
+    {
+      "id": "tbl_2",
+      "number": 2,
+      "label": "میز ۲ (دونفره دنج)",
+      "sectionId": "sec_main",
+      "seats": 2,
+      "shape": "circle",
+      "posX": 14,
+      "posY": 60,
+      "width": 80,
+      "height": 80,
+      "status": "kitchen_pending",
+      "activeOrderId": "ord_102",
+      "currentWaiter": "نیما فراهانی",
+      "customerCount": 2,
+      "occupiedSince": "2026-11-08T07:41:45.468Z"
+    },
+    {
+      "id": "tbl_3",
+      "number": 3,
+      "label": "میز ۳ (چهارنفره مرکزی)",
+      "sectionId": "sec_main",
+      "seats": 4,
+      "shape": "rectangle",
+      "posX": 38,
+      "posY": 26,
+      "width": 110,
+      "height": 85,
+      "status": "empty",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_4",
+      "number": 4,
+      "label": "میز ۴ (کنار بار قهوه)",
+      "sectionId": "sec_main",
+      "seats": 4,
+      "shape": "rectangle",
+      "posX": 38,
+      "posY": 60,
+      "width": 110,
+      "height": 85,
+      "status": "ready_to_serve",
+      "activeOrderId": "ord_103",
+      "currentWaiter": "نیما فراهانی",
+      "customerCount": 3,
+      "occupiedSince": "2026-11-08T07:31:45.468Z"
+    },
+    {
+      "id": "tbl_5",
+      "number": 5,
+      "label": "میز ۵ (گوشه آرام)",
+      "sectionId": "sec_main",
+      "seats": 2,
+      "shape": "circle",
+      "posX": 58,
+      "posY": 26,
+      "width": 80,
+      "height": 80,
+      "status": "empty",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_6",
+      "number": 6,
+      "label": "میز ۶ (شش‌نفره گروهی)",
+      "sectionId": "sec_main",
+      "seats": 6,
+      "shape": "rectangle",
+      "posX": 58,
+      "posY": 60,
+      "width": 135,
+      "height": 85,
+      "status": "reserved",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_7",
+      "number": 7,
+      "label": "میز ۷ (تراس روبه‌آفتاب)",
+      "sectionId": "sec_terrace",
+      "seats": 4,
+      "shape": "circle",
+      "posX": 82,
+      "posY": 24,
+      "width": 90,
+      "height": 90,
+      "status": "empty",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_8",
+      "number": 8,
+      "label": "میز ۸ (تراس گوشه زیتون)",
+      "sectionId": "sec_terrace",
+      "seats": 4,
+      "shape": "square",
+      "posX": 82,
+      "posY": 52,
+      "width": 90,
+      "height": 90,
+      "status": "empty",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_9",
+      "number": 9,
+      "label": "میز ۹ (تراس دونفره آرام)",
+      "sectionId": "sec_terrace",
+      "seats": 2,
+      "shape": "circle",
+      "posX": 82,
+      "posY": 80,
+      "width": 80,
+      "height": 80,
+      "status": "empty",
+      "activeOrderId": null
+    },
+    {
+      "id": "tbl_10",
+      "number": 10,
+      "label": "میز ۱۰ (سالن کنفرانس VIP)",
+      "sectionId": "sec_vip",
+      "seats": 8,
+      "shape": "rectangle",
+      "posX": 38,
+      "posY": 85,
+      "width": 160,
+      "height": 100,
+      "status": "empty",
+      "activeOrderId": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_hot_coffee",
+      "nameFa": "قهوه گرم",
+      "nameEn": "Hot Coffee",
+      "icon": "Coffee",
+      "sortOrder": 1
+    },
+    {
+      "id": "cat_cold_coffee",
+      "nameFa": "قهوه سرد و آیس",
+      "nameEn": "Cold Coffee",
+      "icon": "CupSoda",
+      "sortOrder": 2
+    },
+    {
+      "id": "cat_tea_herbal",
+      "nameFa": "چای و دمنوش",
+      "nameEn": "Tea & Herbal",
+      "icon": "Flame",
+      "sortOrder": 3
+    },
+    {
+      "id": "cat_cold_drinks",
+      "nameFa": "نوشیدنی سرد و ماکتل",
+      "nameEn": "Cold Drinks",
+      "icon": "GlassWater",
+      "sortOrder": 4
+    },
+    {
+      "id": "cat_bakery",
+      "nameFa": "کیک و شیرینی دست‌ساز",
+      "nameEn": "Bakery & Pastry",
+      "icon": "Cake",
+      "sortOrder": 5
+    },
+    {
+      "id": "cat_breakfast_food",
+      "nameFa": "صبحانه و میان‌وعده",
+      "nameEn": "Breakfast & Snacks",
+      "icon": "Utensils",
+      "sortOrder": 6
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup_1",
+      "name": "برشته‌کاری تخصصی ریو (Rio Coffee Roasters)",
+      "contactPerson": "مهندس کاویانی",
+      "phone": "02188991122",
+      "category": "دان قهوه و ملزومات دم‌آوری",
+      "address": "تهران، خیابان سهروردی شمالی"
+    },
+    {
+      "id": "sup_2",
+      "name": "لبنیات سنتی پاک دشت",
+      "contactPerson": "آقای صالحی",
+      "phone": "02166554433",
+      "category": "شیر تازه و خامه",
+      "address": "تهران، بزرگراه فتح"
+    },
+    {
+      "id": "sup_3",
+      "name": "قنادی و نانوایی فرانسوی لوتوس",
+      "contactPerson": "خانم بهرامی",
+      "phone": "02122334455",
+      "category": "کرواسان و شیرینی روزانه",
+      "address": "تهران، زعفرانیه"
+    },
+    {
+      "id": "sup_4",
+      "name": "پخش مرکزی سیروپ و طعم‌دهنده‌های مونین",
+      "contactPerson": "آقای تقوی",
+      "phone": "02177889900",
+      "category": "سیروپ و پودر کاکائو",
+      "address": "تهران، خیابان شریعتی"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "ing_beans_specialty",
+      "nameFa": "دان قهوه تخصصی ۱۰۰٪ عربیکا (اتیوپی سیدامو)",
+      "category": "قهوه",
+      "unit": "g",
+      "currentStock": 8400,
+      "minThreshold": 3000,
+      "costPerUnit": 1200,
+      "supplierId": "sup_1",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_beans_house",
+      "nameFa": "دان قهوه هاوس بلند نیکو (۸۰/۲۰ برزیل)",
+      "category": "قهوه",
+      "unit": "g",
+      "currentStock": 12500,
+      "minThreshold": 4000,
+      "costPerUnit": 850,
+      "supplierId": "sup_1",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_fresh_milk",
+      "nameFa": "شیر تازه پرچرب ۳.۵٪ باریستا",
+      "category": "لبنیات",
+      "unit": "liter",
+      "currentStock": 24,
+      "minThreshold": 10,
+      "costPerUnit": 42000,
+      "supplierId": "sup_2",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_oat_milk",
+      "nameFa": "شیر گیاهی جو دوسر (Oat Milk)",
+      "category": "لبنیات",
+      "unit": "liter",
+      "currentStock": 6,
+      "minThreshold": 4,
+      "costPerUnit": 110000,
+      "supplierId": "sup_2",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_belgian_chocolate",
+      "nameFa": "پودر شکلات تلخ بلژیکی ۷۰٪",
+      "category": "سیروپ و شکلات",
+      "unit": "g",
+      "currentStock": 3200,
+      "minThreshold": 1000,
+      "costPerUnit": 900,
+      "supplierId": "sup_4",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_vanilla_syrup",
+      "nameFa": "سیروپ وانیل ماداگاسکار",
+      "category": "سیروپ و شکلات",
+      "unit": "ml",
+      "currentStock": 1400,
+      "minThreshold": 500,
+      "costPerUnit": 450,
+      "supplierId": "sup_4",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_caramel_sauce",
+      "nameFa": "سس کارامل نمکی خانگی",
+      "category": "سیروپ و شکلات",
+      "unit": "g",
+      "currentStock": 1800,
+      "minThreshold": 600,
+      "costPerUnit": 520,
+      "supplierId": "sup_4",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_lahijan_tea",
+      "nameFa": "چای بهاره دست‌چین سرگل لاهیجان",
+      "category": "چای",
+      "unit": "g",
+      "currentStock": 4500,
+      "minThreshold": 1500,
+      "costPerUnit": 600,
+      "supplierId": "sup_1",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_herbal_mix",
+      "nameFa": "ترکیب گل‌گاوزبان، سنبل‌الطیب و بهارنارنج",
+      "category": "چای",
+      "unit": "g",
+      "currentStock": 2100,
+      "minThreshold": 800,
+      "costPerUnit": 750,
+      "supplierId": "sup_1",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_fresh_croissant",
+      "nameFa": "کرواسان کره‌ای پخت روز",
+      "category": "شیرینی",
+      "unit": "count",
+      "currentStock": 18,
+      "minThreshold": 6,
+      "costPerUnit": 75000,
+      "supplierId": "sup_3",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_san_sebastian",
+      "nameFa": "اسلایس چیزکیک سن سباستین",
+      "category": "شیرینی",
+      "unit": "count",
+      "currentStock": 12,
+      "minThreshold": 4,
+      "costPerUnit": 110000,
+      "supplierId": "sup_3",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_berry_tart",
+      "nameFa": "تارت توت فرنگی و تمشک تازه",
+      "category": "شیرینی",
+      "unit": "count",
+      "currentStock": 7,
+      "minThreshold": 5,
+      "costPerUnit": 95000,
+      "supplierId": "sup_3",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_panini_bread",
+      "nameFa": "نان چاباتا مخصوص پنینی",
+      "category": "نان و غذا",
+      "unit": "count",
+      "currentStock": 15,
+      "minThreshold": 5,
+      "costPerUnit": 35000,
+      "supplierId": "sup_3",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    },
+    {
+      "id": "ing_smoked_turkey",
+      "nameFa": "ژامبون بوقلمون دودی ۹۰٪",
+      "category": "نان و غذا",
+      "unit": "g",
+      "currentStock": 2200,
+      "minThreshold": 1000,
+      "costPerUnit": 800,
+      "supplierId": "sup_3",
+      "lastRestockedAt": "2026-11-08T07:56:45.467Z"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "item_espresso_double",
+      "nameFa": "اسپرسو دبل ریسترتو",
+      "nameEn": "Double Espresso Ristretto",
+      "categoryId": "cat_hot_coffee",
+      "price": 85000,
+      "costPrice": 22000,
+      "prepTimeMinutes": 3,
+      "description": "عصاره‌گیری دقیق از دان تخصصی عربیکا با کرمای غلیظ فندقی و تن‌واری مخملی",
+      "imageUrl": "/images/espresso_double.jpg",
+      "isAvailable": true,
+      "isFeatured": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_beans_specialty",
+          "amount": 18
+        }
+      ],
+      "optionGroups": [
+        {
+          "id": "opt_beans",
+          "title": "نوع دان قهوه",
+          "required": true,
+          "options": [
+            {
+              "name": "۱۰۰٪ عربیکا تخصصی اتیوپی",
+              "priceModifier": 0
+            },
+            {
+              "name": "هاوس بلند نیکو (۸۰/۲۰)",
+              "priceModifier": -10000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item_latte_art",
+      "nameFa": "کافه لاته آرت",
+      "nameEn": "Artisanal Cafe Latte",
+      "categoryId": "cat_hot_coffee",
+      "price": 125000,
+      "costPrice": 38000,
+      "prepTimeMinutes": 5,
+      "description": "اسپرسو دبل همراه با فوم حریری شیر تازه پرچرب و لاته آرت طرح رُزتا",
+      "imageUrl": "/images/latte_art.jpg",
+      "isAvailable": true,
+      "isFeatured": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_beans_specialty",
+          "amount": 18
+        },
+        {
+          "ingredientId": "ing_fresh_milk",
+          "amount": 0.22
+        }
+      ],
+      "optionGroups": [
+        {
+          "id": "opt_milk_type",
+          "title": "انتخاب نوع شیر",
+          "required": false,
+          "options": [
+            {
+              "name": "شیر پرچرب باریستا (پیش‌فرض)",
+              "priceModifier": 0
+            },
+            {
+              "name": "شیر جو دوسر گیاهی (Oat Milk)",
+              "priceModifier": 25000
+            },
+            {
+              "name": "شیر کم‌چرب",
+              "priceModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "opt_syrup",
+          "title": "افزودن سیروپ طعم‌دار",
+          "required": false,
+          "options": [
+            {
+              "name": "وانیل ماداگاسکار",
+              "priceModifier": 20000
+            },
+            {
+              "name": "کارامل نمکی",
+              "priceModifier": 20000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item_cappuccino",
+      "nameFa": "کاپوچینو کلاسیک ایتالیایی",
+      "nameEn": "Classic Italian Cappuccino",
+      "categoryId": "cat_hot_coffee",
+      "price": 115000,
+      "costPrice": 35000,
+      "prepTimeMinutes": 4,
+      "description": "ترکیب متوازن یک‌سوم اسپرسو، یک‌سوم شیر گرم و یک‌سوم فوم متراکم کرمی با پودر دارچین اختیاری",
+      "imageUrl": "/images/cappuccino.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_beans_specialty",
+          "amount": 18
+        },
+        {
+          "ingredientId": "ing_fresh_milk",
+          "amount": 0.18
+        }
+      ]
+    },
+    {
+      "id": "item_cold_brew",
+      "nameFa": "کلد برو مرکباتی نیکو",
+      "nameEn": "Citrus Infused Cold Brew",
+      "categoryId": "cat_cold_coffee",
+      "price": 135000,
+      "costPrice": 32000,
+      "prepTimeMinutes": 2,
+      "description": "دم‌آوری سرد ۱۸ ساعته با نت‌های گلی و شکلاتی، سرو شده با یخ بلوری و اسلایس پرتقال تازه",
+      "imageUrl": "/images/cold_brew.jpg",
+      "isAvailable": true,
+      "isFeatured": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_beans_specialty",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": "item_iced_latte",
+      "nameFa": "آیس لاته کاراملی",
+      "nameEn": "Iced Caramel Latte",
+      "categoryId": "cat_cold_coffee",
+      "price": 140000,
+      "costPrice": 42000,
+      "prepTimeMinutes": 4,
+      "description": "اسپرسو دبل روی قطعات یخ کریستالی، شیر سرد غلیظ و سس کارامل نمکی روان",
+      "imageUrl": "/images/iced_latte.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_beans_specialty",
+          "amount": 18
+        },
+        {
+          "ingredientId": "ing_fresh_milk",
+          "amount": 0.2
+        },
+        {
+          "ingredientId": "ing_caramel_sauce",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": "item_hot_chocolate",
+      "nameFa": "هات چاکلت بلژیکی غلیظ",
+      "nameEn": "Belgian Hot Chocolate",
+      "categoryId": "cat_hot_coffee",
+      "price": 130000,
+      "costPrice": 40000,
+      "prepTimeMinutes": 6,
+      "description": "شکلات تلخ ذوب‌شده بلژیکی با شیر پرچرب داغ و بافت ابریشمی بسیار غنی",
+      "imageUrl": "/images/hot_chocolate.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_belgian_chocolate",
+          "amount": 35
+        },
+        {
+          "ingredientId": "ing_fresh_milk",
+          "amount": 0.22
+        }
+      ]
+    },
+    {
+      "id": "item_tea_pot",
+      "nameFa": "چای قوری سرگل لاهیجان (دونفره)",
+      "nameEn": "Lahijan Spring Tea Pot",
+      "categoryId": "cat_tea_herbal",
+      "price": 95000,
+      "costPrice": 18000,
+      "prepTimeMinutes": 8,
+      "description": "دم‌کشیده در قوری چینی با هل کوبیده، نبات زعفرانی و باقلوای خانگی",
+      "imageUrl": "/images/tea_pot.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_lahijan_tea",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "id": "item_herbal_relax",
+      "nameFa": "دمنوش آرامش نیکو",
+      "nameEn": "Niko Serenity Herbal Infusion",
+      "categoryId": "cat_tea_herbal",
+      "price": 105000,
+      "costPrice": 22000,
+      "prepTimeMinutes": 7,
+      "description": "ترکیب ارگانیک گل‌گاوزبان، به‌لیمو، سنبل‌الطیب و عسل طبیعی کنار چوب دارچین",
+      "imageUrl": "/images/herbal_relax.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_herbal_mix",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": "item_croissant",
+      "nameFa": "کرواسان کره‌ای اصیل فرانسوی",
+      "nameEn": "French Butter Croissant",
+      "categoryId": "cat_bakery",
+      "price": 110000,
+      "costPrice": 75000,
+      "prepTimeMinutes": 2,
+      "description": "پخت روزانه با کره طبیعی نیوزلندی، لایه‌های ترد و سبک با عطر وسوسه‌انگیز کره",
+      "imageUrl": "/images/croissant.jpg",
+      "isAvailable": true,
+      "isFeatured": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_fresh_croissant",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "item_san_sebastian_cake",
+      "nameFa": "چیزکیک سن سباستین با سس شکلات",
+      "nameEn": "San Sebastian Cheesecake",
+      "categoryId": "cat_bakery",
+      "price": 175000,
+      "costPrice": 110000,
+      "prepTimeMinutes": 3,
+      "description": "چیزکیک برشته باسکی با مغز لطیف کرمی، سرو همراه سس شکلات تلخ بلژیکی داغ",
+      "imageUrl": "/images/san_sebastian.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_san_sebastian",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "item_berry_tart_slice",
+      "nameFa": "تارت میوه‌های جنگلی و تمشک",
+      "nameEn": "Wild Berry Custard Tart",
+      "categoryId": "cat_bakery",
+      "price": 160000,
+      "costPrice": 95000,
+      "prepTimeMinutes": 2,
+      "description": "خمیر تارت ترد سابله با کرم پاتیسیر وانیلی و توت‌فرنگی و تمشک تازه تابستانه",
+      "imageUrl": "/images/berry_tart.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_berry_tart",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "item_panini_turkey",
+      "nameFa": "پنینی بوقلمون دودی و پنیر گودا",
+      "nameEn": "Smoked Turkey & Gouda Panini",
+      "categoryId": "cat_breakfast_food",
+      "price": 210000,
+      "costPrice": 98000,
+      "prepTimeMinutes": 10,
+      "description": "نان چاباتا برشته شده با گریل چدنی، بوقلمون دودی، پنیر گودای ذوب‌شده و سس پستوی ریحان",
+      "imageUrl": "/images/panini_turkey.jpg",
+      "isAvailable": true,
+      "recipe": [
+        {
+          "ingredientId": "ing_panini_bread",
+          "amount": 1
+        },
+        {
+          "ingredientId": "ing_smoked_turkey",
+          "amount": 120
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_1",
+      "name": "دکتر مهران علوی",
+      "phone": "09121234567",
+      "status": "vip",
+      "registeredAt": "2026-01-15T10:00:00.000Z",
+      "visitCount": 28,
+      "totalSpent": 4850000,
+      "loyaltyPoints": 485,
+      "favoriteItems": [
+        "کافه لاته آرت",
+        "کرواسان کره‌ای اصیل فرانسوی"
+      ],
+      "notes": "مشتری قدیمی و روزانه کافه — همیشه لاته با شیر جو دوسر ترجیح می‌دهند."
+    },
+    {
+      "id": "cust_2",
+      "name": "خانم سارا شریفی",
+      "phone": "09129876543",
+      "status": "vip",
+      "registeredAt": "2026-02-01T14:30:00.000Z",
+      "visitCount": 14,
+      "totalSpent": 2650000,
+      "loyaltyPoints": 265,
+      "favoriteItems": [
+        "کلد برو مرکباتی نیکو",
+        "تارت میوه‌های جنگلی و تمشک"
+      ],
+      "notes": "طراح گرافیک؛ علاقه‌مند به کار با لپ‌تاپ در فضای باز و تراس."
+    },
+    {
+      "id": "cust_3",
+      "name": "مهندس بردیا رحمانی",
+      "phone": "09355551234",
+      "status": "normal",
+      "registeredAt": "2026-02-18T18:15:00.000Z",
+      "visitCount": 5,
+      "totalSpent": 820000,
+      "loyaltyPoints": 82,
+      "favoriteItems": [
+        "اسپرسو دبل ریسترتو"
+      ],
+      "notes": "عاشق قهوه‌های دبل شات بدون شکر."
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_101",
+      "orderNumber": 101,
+      "tableId": "tbl_1",
+      "tableNumber": 1,
+      "type": "dine_in",
+      "customerId": "cust_1",
+      "customerName": "دکتر مهران علوی",
+      "waiterName": "نیما فراهانی",
+      "cashierName": "مهسا صادقی",
+      "createdAt": "2026-11-08T07:14:45.468Z",
+      "status": "served",
+      "items": [
+        {
+          "id": "item_ord_1",
+          "menuItemId": "item_latte_art",
+          "nameFa": "کافه لاته آرت",
+          "unitPrice": 125000,
+          "quantity": 2,
+          "selectedOptions": [
+            "شیر جو دوسر گیاهی (+۲۵,۰۰۰ ت)"
+          ],
+          "notes": "کم‌حرارت‌تر و آرت رزتا",
+          "status": "served",
+          "prepStartedAt": "2026-11-08T07:18:45.468Z",
+          "prepCompletedAt": "2026-11-08T07:24:45.468Z",
+          "imageUrl": "/images/latte_art.jpg"
+        },
+        {
+          "id": "item_ord_2",
+          "menuItemId": "item_croissant",
+          "nameFa": "کرواسان کره‌ای اصیل فرانسوی",
+          "unitPrice": 110000,
+          "quantity": 1,
+          "notes": "کمی تست شود",
+          "status": "served",
+          "prepStartedAt": "2026-11-08T07:18:45.468Z",
+          "prepCompletedAt": "2026-11-08T07:22:45.468Z",
+          "imageUrl": "/images/croissant.jpg"
+        }
+      ],
+      "subtotal": 410000,
+      "discountAmount": 20000,
+      "taxAmount": 0,
+      "serviceAmount": 0,
+      "totalAmount": 390000,
+      "paidAmount": 0,
+      "paymentStatus": "unpaid",
+      "payments": []
+    },
+    {
+      "id": "ord_102",
+      "orderNumber": 102,
+      "tableId": "tbl_2",
+      "tableNumber": 2,
+      "type": "dine_in",
+      "customerId": "cust_2",
+      "customerName": "خانم سارا شریفی",
+      "waiterName": "نیما فراهانی",
+      "createdAt": "2026-11-08T07:41:45.468Z",
+      "status": "preparing",
+      "items": [
+        {
+          "id": "item_ord_3",
+          "menuItemId": "item_cold_brew",
+          "nameFa": "کلد برو مرکباتی نیکو",
+          "unitPrice": 135000,
+          "quantity": 1,
+          "status": "preparing",
+          "prepStartedAt": "2026-11-08T07:44:45.468Z",
+          "imageUrl": "/images/cold_brew.jpg"
+        },
+        {
+          "id": "item_ord_4",
+          "menuItemId": "item_san_sebastian_cake",
+          "nameFa": "چیزکیک سن سباستین با سس شکلات",
+          "unitPrice": 175000,
+          "quantity": 1,
+          "status": "preparing",
+          "prepStartedAt": "2026-11-08T07:44:45.468Z",
+          "imageUrl": "/images/san_sebastian.jpg"
+        }
+      ],
+      "subtotal": 310000,
+      "discountAmount": 0,
+      "taxAmount": 0,
+      "serviceAmount": 0,
+      "totalAmount": 310000,
+      "paidAmount": 0,
+      "paymentStatus": "unpaid",
+      "payments": []
+    },
+    {
+      "id": "ord_103",
+      "orderNumber": 103,
+      "tableId": "tbl_4",
+      "tableNumber": 4,
+      "type": "dine_in",
+      "customerId": null,
+      "customerName": "مشتری آزاد (میز ۴)",
+      "waiterName": "نیما فراهانی",
+      "createdAt": "2026-11-08T07:31:45.468Z",
+      "status": "ready",
+      "items": [
+        {
+          "id": "item_ord_5",
+          "menuItemId": "item_cappuccino",
+          "nameFa": "کاپوچینو کلاسیک ایتالیایی",
+          "unitPrice": 115000,
+          "quantity": 2,
+          "status": "ready",
+          "prepStartedAt": "2026-11-08T07:36:45.468Z",
+          "prepCompletedAt": "2026-11-08T07:42:45.468Z",
+          "imageUrl": "/images/cappuccino.jpg"
+        },
+        {
+          "id": "item_ord_6",
+          "menuItemId": "item_berry_tart_slice",
+          "nameFa": "تارت میوه‌های جنگلی و تمشک",
+          "unitPrice": 160000,
+          "quantity": 1,
+          "status": "ready",
+          "prepStartedAt": "2026-11-08T07:36:45.468Z",
+          "prepCompletedAt": "2026-11-08T07:41:45.468Z",
+          "imageUrl": "/images/berry_tart.jpg"
+        }
+      ],
+      "subtotal": 390000,
+      "discountAmount": 0,
+      "taxAmount": 0,
+      "serviceAmount": 0,
+      "totalAmount": 390000,
+      "paidAmount": 0,
+      "paymentStatus": "unpaid",
+      "payments": []
+    },
+    {
+      "id": "ord_100",
+      "orderNumber": 100,
+      "tableId": null,
+      "type": "takeaway",
+      "customerId": null,
+      "customerName": "مشتری حضوری بیرون‌بر",
+      "cashierName": "مهسا صادقی",
+      "createdAt": "2026-11-08T06:26:45.468Z",
+      "status": "settled",
+      "items": [
+        {
+          "id": "item_ord_prev_1",
+          "menuItemId": "item_espresso_double",
+          "nameFa": "اسپرسو دبل ریسترتو",
+          "unitPrice": 85000,
+          "quantity": 2,
+          "status": "served",
+          "imageUrl": "/images/espresso_double.jpg"
+        },
+        {
+          "id": "item_ord_prev_2",
+          "menuItemId": "item_croissant",
+          "nameFa": "کرواسان کره‌ای اصیل فرانسوی",
+          "unitPrice": 110000,
+          "quantity": 2,
+          "status": "served",
+          "imageUrl": "/images/croissant.jpg"
+        }
+      ],
+      "subtotal": 390000,
+      "discountAmount": 0,
+      "taxAmount": 0,
+      "serviceAmount": 0,
+      "totalAmount": 390000,
+      "paidAmount": 390000,
+      "paymentStatus": "paid",
+      "payments": [
+        {
+          "id": "pay_100_1",
+          "amount": 390000,
+          "method": "pos_card",
+          "timestamp": "2026-11-08T06:31:45.468Z",
+          "registeredBy": "مهسا صادقی",
+          "referenceCode": "TX-948210"
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res_1",
+      "tableId": "tbl_6",
+      "tableNumber": 6,
+      "customerName": "آقای مهندس رضوی",
+      "customerPhone": "09124443322",
+      "guestCount": 6,
+      "date": "2026-11-08",
+      "time": "19:30",
+      "notes": "جلسه کاری تیم مارکتینگ — لطفاً دو قوری چای لاهیجان و بشقاب میوه آماده شود",
+      "status": "confirmed",
+      "createdAt": "2026-11-08T04:56:45.468Z"
+    }
+  ],
+  "cashShifts": [
+    {
+      "id": "shift_today_1",
+      "cashierName": "مهسا صادقی",
+      "openedAt": "2026-11-08T08:00:00.000Z",
+      "initialFloat": 2000000,
+      "expectedCash": 2390000,
+      "status": "open",
+      "notes": "شیفت صبحگاهی آغاز شد. صندوق تراز است."
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp_1",
+      "title": "خرید روزانه شیر تازه پاک‌دشت",
+      "category": "supplies",
+      "amount": 840000,
+      "date": "2026-11-08",
+      "paidBy": "مهسا صادقی (از تنخواه صندوق)",
+      "description": "۲۰ بطری شیر پرچرب باریستا ۳.۵٪"
+    },
+    {
+      "id": "exp_2",
+      "title": "سرویس دوره‌ای دستگاه اسپرسو لامارزوکو",
+      "category": "maintenance",
+      "amount": 1500000,
+      "date": "2026-11-07",
+      "paidBy": "سهراب مرادی",
+      "description": "تعویض واشر گروپ و بک‌واش با پودر استاندارد"
+    }
+  ],
+  "stockMovements": [
+    {
+      "id": "mov_1",
+      "ingredientId": "ing_beans_specialty",
+      "ingredientName": "دان قهوه تخصصی ۱۰۰٪ عربیکا (اتیوپی سیدامو)",
+      "type": "in",
+      "amount": 10000,
+      "unit": "g",
+      "reason": "فاکتور خرید جدید شماره ۴۸۱ از ریو رستر",
+      "performedBy": "سهراب مرادی",
+      "timestamp": "2026-11-06T07:56:45.468Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_1794128619950_6rri",
+      "userId": "usr_super_admin",
+      "userName": "مدیر کل نیکو کافه",
+      "action": "ورود به سیستم",
+      "details": "کاربر مدیر کل نیکو کافه (admin) وارد سیستم مدیریت نیکو کافه شد.",
+      "timestamp": "2026-11-08T09:03:39.950Z"
+    },
+    {
+      "id": "log_1794128615110_vvz3",
+      "userId": "usr_super_admin",
+      "userName": "مدیر کل نیکو کافه",
+      "action": "ورود به سیستم",
+      "details": "کاربر مدیر کل نیکو کافه (admin) وارد سیستم مدیریت نیکو کافه شد.",
+      "timestamp": "2026-11-08T09:03:35.110Z"
+    },
+    {
+      "id": "log_1794124612085_qnwz",
+      "userId": "usr_super_admin",
+      "userName": "مدیر کل نیکو کافه",
+      "action": "ورود به سیستم",
+      "details": "کاربر مدیر کل نیکو کافه وارد سیستم مدیریت نیکو کافه شد.",
+      "timestamp": "2026-11-08T07:56:52.085Z"
+    },
+    {
+      "id": "log_init",
+      "userId": "usr_super_admin",
+      "userName": "مدیر کل نیکو کافه",
+      "action": "راه اندازی اولیه سیستم",
+      "details": "حساب مدیر کل با نام کاربری flowvoice15@gmail.com فعال شد و دیتابیس نیکو کافه مقداردهی اولیه گردید.",
+      "timestamp": "2026-11-08T07:56:45.467Z"
+    }
+  ],
+  "settings": {
+    "cafeName": "نیکو کافه (NIKO CAFE)",
+    "cafeAddress": "تهران، خیابان ولیعصر، نرسیده به میدان ونک، پلاک ۱۴",
+    "cafePhone": "021-88776655",
+    "workingHours": "همه روزه از ساعت ۰۸:۰۰ صبح تا ۲۳:۳۰ شب",
+    "taxRatePercent": 0,
+    "serviceFeePercent": 0,
+    "loyaltyPointPerToman": 10000,
+    "loyaltyPointValueToman": 500,
+    "receiptFooterMessage": "از حضور شما در نیکو کافه سپاسگزاریم. لحظاتتان پر از عطر خوش قهوه!"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "NIKO CAFE Management System",
+  "description": "سیستم جامع مدیریت نیکو کافه — CRM، صندوق POS، نقشه گرافیکی میزها، آشپزخانه، انبار و مواد اولیه، امور مالی و دستیار هوشمند AI",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
